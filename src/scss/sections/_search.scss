@@ -1,0 +1,63 @@
+.search  {
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    
+    @media screen and (min-width: #{$screen-lg}px) {
+        padding: 200px 0;
+    }
+
+    @media screen and (min-width: #{$screen-xl}px) {
+        padding: 152px 0 100px;
+    }
+
+    &__left-block {
+        @media screen and (min-width: #{$screen-xl}px) {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 58px;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+        @media screen and (min-width: #{$screen-lg}px) {
+            margin-bottom: 35px;
+        }
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.54em;
+            margin: 60px 0 25px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.08em;
+        }
+    }
+
+    &__filter {
+        margin-bottom: 30px;
+        @media screen and (min-width: #{$screen-lg}px) {
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: #{$screen-xl}px) {
+            margin: 186px 0 60px 4px;
+        }
+    }
+    
+    &__mockup {
+        @media screen and (min-width: #{$screen-lg}px) {
+            position: absolute;
+            right: -5px;
+            top: 50px;
+        }
+        @media screen and (min-width: #{$screen-xl}px) {
+            top: 152px;
+        }
+    }
+}
+

@@ -1,0 +1,26 @@
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font: normal 1rem 'Open Sans', sans-serif;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+.heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    &__red {
+        color: $red;
+    }
+}
+
+

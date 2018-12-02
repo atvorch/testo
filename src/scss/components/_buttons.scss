@@ -1,0 +1,52 @@
+.btn-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &__hover-red:hover &__text {
+        color: $red;
+    }
+    cursor: pointer;
+    &__text {
+        color: $dark-blue-1;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 100%;
+        display: inline-block;
+        transition: 0.2s;
+        
+        @media screen and (min-width: #{$screen-sm}px) {
+            font-size: 1.24rem;
+        }
+    }
+    &__icon {
+        width: 30px;
+        @media screen and (min-width: #{$screen-lg}px) {
+            width: initial;
+        }
+    }
+    &__back__text {
+        margin-left: 10px;
+        @media screen and (min-width: #{$screen-sm}px) {
+            margin-left: 12px;
+        }
+
+    }
+
+    &__forward__text {
+        text-align: right;
+        margin-right: 10px;
+        @media screen and (min-width: #{$screen-sm}px) {
+            margin-right: 15px;
+        }
+    }
+
+    &__forward__icon {
+        transform: scaleX(-1);
+        filter: FlipH;
+    }
+}

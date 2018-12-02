@@ -1,0 +1,122 @@
+.work {
+    background: white;
+    padding: 50px 0;
+
+    @media screen and (min-width: #{$screen-xl}px) {
+        padding: 90px 0 161px;
+    }
+
+    &__heading {
+        color: $dark-blue-2;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 3.1rem;
+            line-height: 2.5rem;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__text {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.14rem;
+            margin-bottom: 60px;
+        }
+    }
+ 
+    &__item-heading {
+        font-size: 1.3rem;
+        margin: 10px 0;
+        @media screen and (min-width: #{$screen-xl}px) {
+            height: 60px;
+            font-size: 1.55rem;
+            margin: 25px 0;
+        }
+    }
+    &__item-text {
+        margin: 0;
+        text-align: center;
+        font-style: italic;
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.1rem;
+        }
+    }
+    &__icon {
+        z-index: 1;
+        padding: 20px;
+        background: white;
+    }
+    &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #d3ccd3;
+            width: 100%;
+            height: 1px;
+            left: 0;
+        }
+    }
+    &__item:nth-child(odd) &__icon-wrapper, {
+        &:after {
+            @media screen and (min-width: #{$screen-sm}px) {
+                display: none;
+             }
+        }
+    }
+    &__item:nth-child(even) &__icon-wrapper {
+        &:after {
+            @media screen and (min-width: #{$screen-sm}px) {
+                left: -55%;
+            }
+        }
+    }
+    &__item:nth-child(3) &__icon-wrapper {
+        &:after {
+            @media screen and (min-width: #{$screen-lg}px) {
+                left: -55%;
+                display: block;
+            }
+        }
+    }
+    &__item:nth-child(1) {
+        @media screen and (min-width: #{$screen-xl}px) {
+            z-index: 4;
+        }
+    }
+    &__item:nth-child(2) {
+        @media screen and (min-width: #{$screen-xl}px) {
+            z-index: 3;
+        }
+    }
+    &__item:nth-child(1),
+    &__item:nth-child(2) {
+        @media screen and (min-width: #{$screen-xl}px) {
+            transform: translateX(13px);
+        }
+    }
+    &__item:nth-child(3){
+        @media screen and (min-width: #{$screen-xl}px) {
+            transform: translateX(-2px);
+            z-index: 2;
+        }
+    }
+    &__item:nth-child(4){
+        @media screen and (min-width: #{$screen-xl}px) {
+            transform: translateX(-29.5px);
+            z-index: 1;
+        }
+    }
+
+}

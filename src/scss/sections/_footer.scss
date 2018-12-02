@@ -1,0 +1,8 @@
+.footer {
+    margin-top: auto;
+    padding-bottom: 15px;
+    @media screen and (min-width: #{$screen-xl}px) {
+        margin-top: 17px;
+        padding: 36px 15px 36px 23px;
+    }
+}

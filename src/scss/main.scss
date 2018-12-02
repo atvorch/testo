@@ -1,0 +1,22 @@
+//--------- vendores -----------
+
+@import "vendors/bootstrap";
+
+//--------- base -----------
+
+@import "base/vars";
+@import "base/general";
+
+//--------- components -----------
+
+@import "components/buttons";
+
+//--------- sections -----------
+
+@import "sections/header";
+@import "sections/work";
+@import "sections/wireframing";
+@import "sections/search";
+@import "sections/tickets";
+@import "sections/footer";
+

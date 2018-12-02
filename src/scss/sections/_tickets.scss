@@ -1,0 +1,22 @@
+.tickets {
+    
+    margin-bottom: 50px;
+
+    @media screen and (min-width: #{$screen-xl}px) {
+        margin: 85px 20px 85px 129px;
+    }
+
+    &__heading {
+        margin-bottom: 30px;
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.54em;
+            margin: 65px 0 35px 3px;
+        }
+    }
+    &__text {
+        margin-bottom: 30px;
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.08rem;
+        }
+    }
+}

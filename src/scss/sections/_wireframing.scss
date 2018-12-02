@@ -1,0 +1,40 @@
+.wireframing {
+    padding: 50px 0;
+    background-image: url(assets/img/wireframing-bg.png);
+    background-size: 30px;
+
+    @media screen and (min-width: #{$screen-xl}px) {
+        padding: 93px 92px 163px 120px;
+    }
+    &__row {
+        padding: 27px 0;
+    }
+    &__picture {
+        @media screen and (min-width: #{$screen-sm}px) {
+            width: 50%;
+        }
+        @media screen and (min-width: #{$screen-lg}px) {
+            width: auto;
+        }
+    }
+
+    &__heading {
+        color: white;
+        margin-bottom: 20px;
+        
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 2.9rem;
+            margin-bottom: 25px;
+        }
+    }
+    &__text {
+        color: white;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: #{$screen-xl}px) {
+            text-align: left;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.header {
+    position: absolute;
+    padding: 20px;
+
+    @media screen and (min-width: #{$screen-md}px) {
+        padding: 30px 45px 20px 25px;
+    }
+    &__sigma {
+        @media screen and (min-width: #{$screen-xl}px){
+            transform: translate(2px,2px);
+        }
+    }
+}
+
+.banner {
+    position: relative;
+    padding: 90px 0 50px;
+
+    @media screen and (min-width: #{$screen-md}px) {
+        padding: 100px 0 60px;
+    }
+    @media screen and (min-width: #{$screen-xl}px) {
+        padding: 130px 0 119px;
+    }
+ 
+    &__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
+    &__logo {
+        height: 50px;
+        display: block;
+        object-fit: contain;
+        margin: 0 auto;
+        @media screen and (min-width: #{$screen-md}px) {
+            height: auto;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: #{$screen-xl}px) {
+            margin-bottom: 110px;
+            transform: translateX(-25px);
+        }
+    }
+
+    &__separator {
+        margin: 20px auto;
+        @media screen and (min-width: #{$screen-md}px) {
+            margin: 40px auto;
+        }
+        @media screen and (min-width: #{$screen-xl}px) {
+            margin: 51px auto;
+        }
+    }
+
+    &__heading-1 {
+        font-size: 2rem;
+        
+        @media screen and (min-width: #{$screen-md}px) {
+            font-size: 3rem;
+        }
+        
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size:4rem;
+            line-height: 100%;
+            margin-bottom: 3px;
+        }
+    }
+
+    &__heading-2 {
+        font-size: 1rem;
+        margin-bottom: 0;
+        color: $dark-blue-2;
+        position: relative;
+        margin-bottom: 50px;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100px;
+            bottom: -26px;
+            height: 2px;
+            background: #ef4d41;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            @media screen and (min-width: #{$screen-xl}px) {
+                width: 185px;
+                bottom: -55px;
+            }
+        }
+
+        @media screen and (min-width: #{$screen-md}px) {
+            font-size: 1.6rem;
+        }
+
+        @media screen and (min-width: #{$screen-xl}px) {
+            margin-bottom: 110px;
+            font-size: 2.3rem;
+        }
+    }
+   
+
+    &__heading-3 {
+        @media screen and (min-width: #{$screen-md}px) {
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__heading-4 {
+        margin-bottom: 10px;
+
+        @media screen and (min-width: #{$screen-md}px) {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        @media screen and (min-width: #{$screen-xl}px) {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            margin-bottom: 0;
+        }
+    }
+}
