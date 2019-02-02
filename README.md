@@ -1,4 +1,5 @@
-## Sigmavia Landig Page
+# Sigmavia Landig Page
+Test task for Sigma Software
 
 #### About
 * In this project I used the following technologies: gulp, sass/scss, html/css
