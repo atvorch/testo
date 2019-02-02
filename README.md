@@ -8,6 +8,5 @@
 * npm install
 * npm run dev
 
-#### Github Pages - [Sigmavia Landing Page](https://atvorch.github.io/testo/)
 
 
