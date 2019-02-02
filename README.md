@@ -1,7 +1,7 @@
 ## Sigmavia Landig Page
 
 #### About
-* In this project I used the following technologie: gulp, sass/scss, html/css
+* In this project I used the following technologies: gulp, sass/scss, html/css
 
 #### How to run project locally:
 * git clone https://github.com/atvorch/testo.git
